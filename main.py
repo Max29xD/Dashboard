@@ -1,10 +1,14 @@
-from app.config.db_connection import create_db_engine
+from sqlalchemy import create_engine
+import app.config.setting as setting
 from dash import Dash, dcc, html
 import pandas as pd
 from app.query.query import query_zero
 from app.conts.table_names import table_names
 
-engine = create_db_engine(auth=True)
+# Conectar a la base de datos
+engine = create_engine(
+    f'mssql+pyodbc://{setting.USERNAME}:{setting.PASSWORD}@{setting.SERVER}/{setting.DATABASE}?driver=ODBC+Driver+17+for+SQL+Server,'
+)
 
 print('Database connected')
 

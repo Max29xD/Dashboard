@@ -1,5 +1,5 @@
 DRIVER = 'ODBC Driver 17 for SQL Server'
 SERVER = 'LAPTOP-TH037IGS\\SQLEXPRESS'
-DATABASE = 'CementoCoboce'
-USERNAME = ''
-PASSWORD = ''
+DATABASE = 'Proyecto_Cemento_Coboce'
+USERNAME = 'sa'
+PASSWORD = '12345678'
