@@ -1,0 +1,5 @@
+DRIVER = 'ODBC Driver 17 for SQL Server'
+SERVER = 'LAPTOP-TH037IGS\\SQLEXPRESS'
+DATABASE = 'CementoCoboce'
+USERNAME = ''
+PASSWORD = ''
